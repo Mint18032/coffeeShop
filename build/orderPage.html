@@ -1,8 +1,41 @@
 <head>
     <title>Whatever Coffee Shop</title>
-    <link href="../stylesheets/general.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheets/general.css" rel="stylesheet">
+    <link href="./stylesheets/button.css" rel="stylesheet">
+    <link href="./stylesheets/layout.css" rel="stylesheet">
 </head>
 
-<header id="header">Whatever Coffee Shop</header>
+<header><a style="font-size: 160%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">WHATEVER
+        COFFEE SHOP</a>
+    <div class="tabBar">
+        <button class="tabBtn" onclick="location.href='./index.html'" type="button">Trang chủ</button>
+        <button class="tabBtn" onclick="location.href='./orderPage.html'" type="button">Đặt hàng</button>
+        <button class="tabBtn" onclick="location.href='./index.html'" type="button">Cửa hàng</button>
+        <button class="tabBtn" onclick="location.href='./index.html'" type="button">Khuyến mãi</button>
+    </div>
+</header>
 
-<h1>Order</h1>
+<div class="content">
+    <h1>Order</h1>
+</div>
+<footer>
+    <a style="font-size: 160%;">Whatever Coffee Shop</a>
+    <div class="dropdownGrid">
+        <button class="dropdown">+ Thông tin website
+            <div class="dropdown-content">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./orderPage.html">Đặt hàng</a>
+                <a>Khuyến mãi</a>
+            </div>
+        </button>
+        <button class="dropdown">+ Điều khoản sử dụng<div class="dropdown-content">
+                <a href="./terms.html">Quy chế website</a>
+                <a href="./policy.html">Bảo mật thông tin</a>
+            </div></button>
+        <button class="dropdown">+ Hotline<div class="dropdown-content">
+                <a href="./orderPage.html">Đặt hàng: 0000 1111 (7AM - 8:30PM)</a>
+                <a href="./policy.html">Hỗ trợ: 1234 5478 (7AM - 9PM)</a>
+            </div></button>
+    </div>
+</footer>

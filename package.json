@@ -4,7 +4,7 @@
   "description": "a header",
   "main": "index.js",
   "scripts": {
-    "start": "gulp build",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,14 +14,19 @@
   "keywords": [
     "none"
   ],
-  "author": "",
+  "author": "minh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mint18032/sampleHeader/issues"
   },
   "homepage": "https://github.com/Mint18032/sampleHeader#readme",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0"
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2"
   }
 }

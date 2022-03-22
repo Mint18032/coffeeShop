@@ -1,0 +1,93 @@
+.tabBar {
+  display: grid;
+  width: 70%;
+}
+
+.tabBtn {
+  background-color: transparent;
+  color: white;
+  float: right;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s ease;
+  text-align: center;
+}
+
+.tabBtn:hover {
+  font-weight: bold;
+  border-bottom: solid 0.25px white;
+}
+
+.dropdown {
+  background-color: transparent;
+  color: white;
+  float: right;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s ease;
+  text-align: left;
+  font-weight: bold;
+  width: 70%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  padding: 2%;
+  background-color: transparent;
+  font-weight: normal;
+  border-bottom: solid 0.25px white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 2px 0 2px 0;
+  display: block;
+  color: white;
+  text-decoration: none;
+  z-index: 4;
+}
+.dropdown-content a:hover {
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdownGrid {
+  display: grid;
+  width: 70%;
+  height: 100%;
+  float: right;
+}
+
+@media only screen and (min-width: 850px) {
+  .dropdownGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tabBar {
+    grid-template-columns: repeat(8, 1fr);
+    float: right;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .dropdownGrid {
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .tabBar {
+    float: center;
+  }
+
+  header a {
+    display: none;
+  }
+}
