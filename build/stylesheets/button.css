@@ -15,6 +15,36 @@
   float: right;
 }
 
+.gogoBtn {
+  transition: all 0.5s;
+  text-align: center;
+  color: #fa9c21;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  font-size: 160%;
+  font-weight: bold;
+  padding-left: 47%;
+}
+.gogoBtn span {
+  color: #fa9c21;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.gogoBtn span a {
+  display: none;
+}
+
+.gogoBtn:hover {
+  padding-left: 46%;
+}
+
+.gogoBtn:hover span a {
+  display: inline-block;
+}
+
 .tabBar {
   display: grid;
   width: 70%;
