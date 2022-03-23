@@ -9,6 +9,26 @@
     transition-duration: 0.4s ease;
 }
 
+@mixin roundBtn {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 50%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s ease;
+}
+
+#profile {
+    @include roundBtn;
+    width: 50px;
+    height: 50px;
+    font-size: 200%;
+    float: right;
+}
+
 .tabBar {
     display: grid;
     width: 70%;
@@ -17,11 +37,11 @@
 .tabBtn {
     @include btn;
     text-align: center;
+    font-size: 90%;
 }
 
 .tabBtn:hover {
     font-weight: bold;
-    border-bottom: solid 0.25px white;
 }
 
 .dropdown {    
