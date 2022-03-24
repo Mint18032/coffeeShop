@@ -24,7 +24,7 @@
   width: fit-content;
   font-size: 160%;
   font-weight: bold;
-  padding-left: 47%;
+  padding-left: 46%;
 }
 .gogoBtn span {
   color: #fa9c21;
@@ -38,7 +38,7 @@
 }
 
 .gogoBtn:hover {
-  padding-left: 46%;
+  padding-left: 45%;
 }
 
 .gogoBtn:hover span a {
@@ -47,7 +47,9 @@
 
 .tabBar {
   display: grid;
+  float: inline-end;
   width: 70%;
+  padding-left: 30%;
 }
 
 .tabBtn {
@@ -121,17 +123,12 @@
   }
 
   .tabBar {
-    grid-template-columns: repeat(8, 1fr);
-    float: right;
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 @media only screen and (max-width: 850px) {
   .dropdownGrid {
     grid-template-rows: repeat(4, 1fr);
-  }
-
-  .tabBar {
-    float: center;
   }
 
   header a {

@@ -11,15 +11,34 @@
     width: fit-content;
     font-size: 160%; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    padding: 0.77% 4%;
+    padding: 0.05% 3%;
     z-index: 2;
+
+    i {
+        transition: transform 20s;
+        transform-style: preserve-3d;  
+        -webkit-animation: animationFlipbox 10s infinite;
+        animation: animationFlipbox 10s infinite;
+    }
+}
+@-webkit-keyframes animationFlipbox {
+40%{transform:rotateY(0deg)}
+50%{transform:rotateY(180deg)}
+90%{transform:rotateY(180deg)}
+100%{transform:rotateY(0deg)}
+}
+@keyframes animationFlipbox {
+40%{transform:rotateY(0deg)}
+50%{transform:rotateY(180deg)}
+90%{transform:rotateY(180deg)}
+100%{transform:rotateY(0deg)}
 }
 
 /** SLIDESHOW **/
 .slideshow,
 .slideshow:after { 
     position: relative;
-    top: -16px;
+    top: -25px;
     width: 100%;
     height: 100%;
     color: white;
