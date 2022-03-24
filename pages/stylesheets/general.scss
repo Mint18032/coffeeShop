@@ -48,12 +48,24 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 05% 9% 5%;
-  margin-top: -60px;
-  height: 60px;  
+  padding: 05% 9% 5% 9%;
   width: 100%;
   color: white;
   background-image: url("../../img/footer.jpg");
+}
+
+
+@media only screen and (min-width: 850px) {
+  footer {
+    margin-top: -60px;
+    height: 60px;  
+  }
+}
+@media only screen and (max-width: 850px) {
+  footer {
+    margin-top: -150px;
+    height: 150px;  
+  }
 }
 
 h1 {

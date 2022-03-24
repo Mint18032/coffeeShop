@@ -23,9 +23,6 @@
 
 #profile {
     @include roundBtn;
-    width: 50px;
-    height: 50px;
-    font-size: 200%;
     float: right;
 }
 
@@ -64,14 +61,11 @@
 .tabBar {
     display: grid;
     float: inline-end;
-    width: 70%;
-    padding-left: 30%
 }
 
 .tabBtn {
     @include btn;
     text-align: center;
-    font-size: 90%;
 }
 
 .tabBtn:hover {
@@ -82,7 +76,7 @@
     @include btn;
     text-align: left;
     font-weight: bold;
-    width: 70%;
+    width: 80%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -113,24 +107,43 @@
 }
 
 .dropdownGrid {
+    padding: auto 5%;
     display: grid;
-    width: 70%;
+    width: 90%;
     height: 100%;
-    float: right;
+    float: left;
+    grid-template-columns: 4fr repeat(3, 2fr);
 }
+
 @media only screen and (min-width: 850px) {
-    .dropdownGrid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .tabBar {
-        grid-template-columns: repeat(9, 1fr);
-    }
+  .tabBar {
+    grid-template-columns: 3fr repeat(7, 1fr);
+    width: 85%;
+  }
+
+  .tabBtn {
+    font-size: 90%;
+  }
+
+  #profile {      
+    width: 50px;
+    height: 50px;
+    font-size: 200%;
+  }
 }
 @media only screen and (max-width: 850px) {
-    .dropdownGrid {
-        grid-template-rows: repeat(4, 1fr);
-    }
-    header a {
-        display: none;
-    }
+  .tabBar {
+    grid-template-columns: 3fr repeat(7, 1fr);
+    width: 90%;
+  }
+
+  .tabBtn {    
+    font-size: 80%;
+  }
+
+  #profile {      
+    width: 40px;
+    height: 40px;
+    font-size: 140%;
+  }
 }

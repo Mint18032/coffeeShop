@@ -1,3 +1,10 @@
+@mixin fippingItem {
+    transition: transform 20s;
+    transform-style: preserve-3d;  
+    -webkit-animation: animationFlipbox 10s infinite;
+    animation: animationFlipbox 10s infinite;
+}
+
 .paper {
     background-color: white;
     padding: 4% 4%;
@@ -7,20 +14,18 @@
 }
 
 .brandname {
-    position: fixed;
     width: fit-content;
-    font-size: 160%; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    padding: 0.05% 3%;
-    z-index: 2;
 
     i {
-        transition: transform 20s;
-        transform-style: preserve-3d;  
-        -webkit-animation: animationFlipbox 10s infinite;
-        animation: animationFlipbox 10s infinite;
+        @include fippingItem;
     }
 }
+
+.dropdownGrid a i {
+    @include fippingItem;
+}
+
 @-webkit-keyframes animationFlipbox {
 40%{transform:rotateY(0deg)}
 50%{transform:rotateY(180deg)}
@@ -99,4 +104,15 @@
 
 .no-cssanimations .cb-slideshow li span {
 	opacity: 1;
+}
+
+@media only screen and (min-width: 850px) {
+  .brandname {
+    font-size: 1.8vw; 
+  }
+}
+@media only screen and (max-width: 850px) {
+    .brandname {
+        font-size: 130%;
+    }
 }
