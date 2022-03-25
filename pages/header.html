@@ -4,6 +4,7 @@
     <link href="./stylesheets/general.css" rel="stylesheet">
     <link href="./stylesheets/button.css" rel="stylesheet">
     <link href="./stylesheets/layout.css" rel="stylesheet">
+    <link href="./stylesheets/popup.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,6 +19,17 @@
         <button class="tabBtn" onclick="location.href='./index.html'" type="button">Cửa hàng</button>
         <button class="tabBtn" onclick="location.href='./index.html'" type="button">Khuyến mãi</button>
         <div></div>
-        <button id="profile"><i class="fa fa-user-o"></i></button>
+        <button id="profile" onclick="location.href='#popup1'"><i class="fa fa-user-o"></i></button>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Login</h2>
+            <a class="close" href="#">&times;</a>
+            <input placeholder="Nhập số điện thoại của bạn" id="phoneNo" type="number"><BR />
+            <input placeholder="Nhập mật khẩu của bạn" id="password" type="password"><BR />
+            <button class="yellowBtn">ĐĂNG NHẬP</button><BR />
+            <button class="textBtn">Tạo tài khoản</button>
+        </div>
     </div>
 </header>

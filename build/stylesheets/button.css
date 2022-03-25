@@ -1,3 +1,32 @@
+.textBtn {
+  transition: all 0.5s;
+  text-align: center;
+  color: #fa9c21;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+}
+
+.textBtn:hover {
+  font-weight: bold;
+}
+
+.yellowBtn {
+  color: white;
+  background-color: #fa9c21;
+  border: transparent;
+  border-radius: 0.2em;
+  padding: 2% 5%;
+  margin-top: 1%;
+  width: 100%;
+  height: max-content;
+}
+
+.yellowBtn:hover {
+  background-color: #fd9813;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
 #profile {
   background-color: transparent;
   color: white;
