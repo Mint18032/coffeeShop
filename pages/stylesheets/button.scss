@@ -30,6 +30,18 @@
     width: fit-content;
 }
 
+.addBtn {
+    @include roundBtn;
+    border: none;
+    color: black;
+    font-size: 250%;
+    float: inline-end;
+}
+
+.addBtn:hover {
+    color: #fd9813;
+}
+
 .textBtn {
     @include textBtn;
 }

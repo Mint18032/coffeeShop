@@ -1,10 +1,12 @@
 <head>
     <title>Whatever Coffee Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png">
     <link href="./stylesheets/general.css" rel="stylesheet">
     <link href="./stylesheets/button.css" rel="stylesheet">
     <link href="./stylesheets/layout.css" rel="stylesheet">
     <link href="./stylesheets/popup.css" rel="stylesheet">
+    <link href="./stylesheets/product.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -34,9 +36,30 @@
     </div>
 </header>
 
-<div class="content">
-    <h1>Order</h1>
+<div class="content" style="text-align: center;">
+    <ul class="slideshow">
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+    <h1>SẢN PHẨM</h1><BR />
+    <div class="grid">
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/capuchino.jpg"></div>
+            <div class="product-name">Capuchino</div>
+            <table>
+                <th>
+                    <div class="product-price">45.000&#273</div>
+                    <div class="product-pre-price">50.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+    </div>
 </div>
+
 <footer>
     <div class="dropdownGrid">
         <a style="font-size: 180%;">Whatever Coffee Shop<sup><i class="material-icons"

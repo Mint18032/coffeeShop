@@ -1,3 +1,24 @@
+.addBtn {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border: solid 2px white;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s ease;
+  border: none;
+  color: black;
+  font-size: 250%;
+  float: inline-end;
+}
+
+.addBtn:hover {
+  color: #fd9813;
+}
+
 .textBtn {
   transition: all 0.5s;
   text-align: center;
