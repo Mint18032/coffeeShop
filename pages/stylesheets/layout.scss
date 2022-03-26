@@ -116,3 +116,31 @@
         font-size: 130%;
     }
 }
+
+.addressShow {
+    display: grid;
+    padding: 0 5% 8% 5%;
+    height: fit-content;
+    grid-gap: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.addressBox {
+    position: relative;
+    padding: 1% 2%;
+    width: auto;
+    height: 120px;
+    border: 1px solid rgb(194, 194, 194);  
+    border-radius: 0.2em;
+    background-color: white;
+    color: rgba(22, 15, 1, 0.993);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s ease;
+
+
+}
+
+.addressBox:hover {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
