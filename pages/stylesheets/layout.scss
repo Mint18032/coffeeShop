@@ -127,7 +127,7 @@
 
 .addressBox {
     position: relative;
-    padding: 1% 2%;
+    padding: 1% 1%;
     width: auto;
     height: 120px;
     border: 1px solid rgb(194, 194, 194);  
@@ -138,7 +138,18 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s ease;
 
+    img {
+        width: 40%; 
+        height: 100%; 
+    }
+}
 
+.address {
+  display: inline;
+  width: 58%;
+  padding-left: 1%;
+  float: right;
+  background-color: transparent;
 }
 
 .addressBox:hover {
