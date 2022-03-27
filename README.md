@@ -20,8 +20,8 @@ A front-end development of coffee shop webpage for Database class.
 
 The runable source is located in [build directory](./build).
 
-If you want to clone it to your local put it in the same directory with (img)[./img].
+If you want to clone it to your local put it in the same directory with [img](./img).
 
 ## Preview
 
-View my website at (https://mint18032.github.io/coffeeShop/)[https://mint18032.github.io/coffeeShop/].
+View my website at [https://mint18032.github.io/coffeeShop](https://mint18032.github.io/coffeeShop).
