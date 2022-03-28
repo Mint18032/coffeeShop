@@ -1,0 +1,195 @@
+<head>
+    <title>Whatever Coffee Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png">
+    <link href="./stylesheets/general.css" rel="stylesheet">
+    <link href="./stylesheets/button.css" rel="stylesheet">
+    <link href="./stylesheets/layout.css" rel="stylesheet">
+    <link href="./stylesheets/popup.css" rel="stylesheet">
+    <link href="./stylesheets/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<header>
+    <div class="tabBar">
+        <div class="brandName">WHATEVER COFFEE SHOP<sup><i class="material-icons"
+                    style="font-size: 1.7vw;">star</i></sup></div>
+        <button class="tabBtn" onclick="location.href='./index.html'" type="button">Trang chủ</button>
+        <button class="tabBtn" onclick="location.href='./introduction.html'" type="button">Giới thiệu</button>
+        <button class="tabBtn" onclick="location.href='./orderPage.html'" type="button">Đặt hàng</button>
+        <button class="tabBtn" onclick="location.href='./stores.html'" type="button">Cửa hàng</button>
+        <button class="tabBtn" onclick="location.href='./discount.html'" type="button">Khuyến mãi</button>
+        <div></div>
+        <button id="profile" onclick="location.href='#popup1'"><i class="fa fa-user-o"></i></button>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Login</h2>
+            <a class="close" href="#">&times;</a>
+            <input placeholder="Nhập số điện thoại của bạn" id="phoneNo" type="number"><BR />
+            <input placeholder="Nhập mật khẩu của bạn" id="password" type="password"><BR />
+            <button class="yellowBtn">ĐĂNG NHẬP</button><BR />
+            <button class="textBtn">Tạo tài khoản</button>
+        </div>
+    </div>
+</header>
+
+<div class="content">
+    <h1>CÁC SẢN PHẨM GIẢM GIÁ</h1><BR />
+    <div class="grid">
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/capuchino.jpg"></div>
+            <div class="product-name">Capuchino</div>
+            <table>
+                <th>
+                    <div class="product-price">45.000&#273</div>
+                    <div class="product-pre-price">50.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/hotIceCoffee.jpg"></div>
+            <div class="product-name">Hot ice coffee</div>
+            <div class="product-description">Cafe đá nóng</div>
+            <table>
+                <th>
+                    <div class="product-price">40.000&#273</div>
+                    <div class="product-pre-price">45.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/chocolateCoffee.jpg"></div>
+            <div class="product-name">Chocolate coffee</div>
+            <div class="product-description">Cafe socola</div>
+            <table>
+                <th>
+                    <div class="product-price">45.000&#273</div>
+                    <div class="product-pre-price">50.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/chocolateMatfather.jpg"></div>
+            <div class="product-name">Chocolate mat-father</div>
+            <div class="product-description">Socola matcha</div>
+            <table>
+                <th>
+                    <div class="product-price">40.000&#273</div>
+                    <div class="product-pre-price">45.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/superGreenSmoothy.png"></div>
+            <div class="product-name">Super green smoothy</div>
+            <div class="product-description">Smoothy kiwi, bơ</div>
+            <table>
+                <th>
+                    <div class="product-price">45.000&#273</div>
+                    <div class="product-pre-price">50.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/detoxJuice.jpg"></div>
+            <div class="product-name">Detox juice</div>
+            <div class="product-description">Nước ép cà rốt, chanh leo, cherry giúp eo thon dáng đẹp</div>
+            <table>
+                <th>
+                    <div class="product-price">25.000&#273</div>
+                    <div class="product-pre-price">35.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/dragonJuice.jpg"></div>
+            <div class="product-name">Dragon juice</div>
+            <div class="product-description">Nước ép thanh long không hạt</div>
+            <table>
+                <th>
+                    <div class="product-price">25.000&#273</div>
+                    <div class="product-pre-price">35.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/grapeJuice.jpg"></div>
+            <div class="product-name">Grape juice</div>
+            <div class="product-description">Nước ép nho tươi</div>
+            <table>
+                <th>
+                    <div class="product-price">25.000&#273</div>
+                    <div class="product-pre-price">30.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/lemonPeachTea.jpg"></div>
+            <div class="product-name">Lemon peach tea</div>
+            <div class="product-description">Trà đào chanh sả</div>
+            <table>
+                <th>
+                    <div class="product-price">25.000&#273</div>
+                    <div class="product-pre-price">35.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="product-photo"><img src="../img/menu/macaron.jpg"></div>
+            <div class="product-name">Macarons</div>
+            <div class="product-description">Hộp 6 cái macaron</div>
+            <table>
+                <th>
+                    <div class="product-price">40.000&#273</div>
+                    <div class="product-pre-price">45.000&#273</div>
+                </th>
+                <td><button class="addBtn">+</button></td>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="dropdownGrid">
+        <a style="font-size: 180%;">Whatever Coffee Shop<sup><i class="material-icons"
+                    style="font-size: 1.8vw;">star</i></sup></a>
+        <button class="dropdown">+ Thông tin website
+            <div class="dropdown-content">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./orderPage.html">Đặt hàng</a>
+                <a>Khuyến mãi</a>
+            </div>
+        </button>
+        <button class="dropdown">+ Điều khoản sử dụng<div class="dropdown-content">
+                <a href="./terms.html">Quy chế website</a>
+                <a href="./policy.html">Bảo mật thông tin</a>
+            </div></button>
+        <button class="dropdown">+ Hotline<div class="dropdown-content">
+                <a href="./orderPage.html">Đặt hàng: 0000 1111 (7AM - 8:30PM)</a>
+                <a href="./policy.html">Hỗ trợ: 1234 5478 (7AM - 9PM)</a>
+            </div></button>
+    </div>
+</footer>
