@@ -1,16 +1,17 @@
 .container {
     position: relative;
-    padding: 0.5% 0.5%;
+    padding: 1% 1%;
     width: 180px;
-    height: 230px;
+    height: 240px;
     border: 1px solid rgb(194, 194, 194);  
     border-radius: 0.2em;
     background-color: white;
     color: rgba(22, 15, 1, 0.993);
 
     table {
-        width: 105%;
+        width: 100%;
         margin-bottom: 1%;
+        margin-left: 1%;
         bottom: 0;
         position: absolute;
         th {
@@ -18,6 +19,7 @@
         }
         td {
             width: 30%;
+            text-align: center;
         }
     }
 }
@@ -28,12 +30,12 @@
 
 .product-photo {
     display: block;
-    width: 99%;
+    width: 100%;
     height: auto;
 
     img {
         width: 100%;
-        height: auto;
+        height: 55%;
         border-radius: 0.2em;
     }
 }
@@ -43,6 +45,16 @@
     font-weight: bold;
     font-size: 110%;
     margin-top: 1%;
+    padding-left: 1%;
+}
+
+.product-description {
+    font-size: small;
+    font-weight: lighter;
+    text-align: left !important;
+    padding-left: 1.25%;
+    width: 100%;
+    color: gray;
 }
 
 .product-price {
@@ -61,7 +73,8 @@
 .grid {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1% 3%;
+    padding-left: 3%;
+    padding-right: 1%;
     grid-gap: 2%;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
 }
