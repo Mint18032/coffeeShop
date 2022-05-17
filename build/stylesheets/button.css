@@ -48,7 +48,7 @@
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
-#profile {
+.tabRoundBtn {
   background-color: transparent;
   color: white;
   text-align: center;
@@ -59,7 +59,6 @@
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s ease;
-  float: right;
 }
 
 .gogoBtn {
@@ -95,6 +94,7 @@
 .tabBar {
   display: grid;
   float: inline-end;
+  grid-template-columns: 3fr repeat(5, 1fr) repeat(3, 0.5fr);
 }
 
 .tabBtn {
@@ -165,15 +165,14 @@
 
 @media only screen and (min-width: 850px) {
   .tabBar {
-    grid-template-columns: 3fr repeat(7, 1fr);
-    width: 85%;
+    width: 83%;
   }
 
   .tabBtn {
     font-size: 90%;
   }
 
-  #profile {
+  .tabRoundBtn {
     width: 50px;
     height: 50px;
     font-size: 200%;
@@ -181,15 +180,14 @@
 }
 @media only screen and (max-width: 850px) {
   .tabBar {
-    grid-template-columns: 3fr repeat(7, 1fr);
-    width: 90%;
+    width: 81%;
   }
 
   .tabBtn {
     font-size: 80%;
   }
 
-  #profile {
+  .tabRoundBtn {
     width: 40px;
     height: 40px;
     font-size: 140%;

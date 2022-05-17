@@ -36,6 +36,18 @@
   transition: all 5s ease-in-out;
   gap: 1%;
 }
+.popup ul {
+  width: 100%;
+}
+.popup ul li {
+  width: 29%;
+  list-style: none;
+  display: inline-block;
+  text-align: justify;
+  margin: 1%;
+  word-wrap: break-word;
+  color: black;
+}
 .popup h2 {
   margin-top: 0;
   color: #333;
