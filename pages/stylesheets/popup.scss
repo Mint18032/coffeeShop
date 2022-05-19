@@ -41,13 +41,17 @@
   }
 
 ul li {
-    width: 29%;
+    width: 30%;
     list-style: none;
     display: inline-block;
     text-align: justify;
-    margin: 1%;
+    margin: 0.5%;
     word-wrap: break-word;
     color: black;
+}
+
+ul li:nth-child(2) {
+  text-align: center;
 }
 
   h2 {

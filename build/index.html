@@ -21,46 +21,55 @@
         <button class="tabBtn" onclick="location.href='./stores.html'" type="button">Cửa hàng</button>
         <button class="tabBtn" onclick="location.href='./discount.html'" type="button">Khuyến mãi</button>
         <div></div>
-        <button id="profile" class="tabRoundBtn" onclick="location.href='#popup1'"><i class="fa fa-user-o"></i></button>
-        <button id="orders" class="tabRoundBtn" onclick="location.href='#popup2'"><i
-                class="fa fa-shopping-cart"></i></button>
+        <button id="profile" class="tabRoundBtn"><i class="fa fa-user-o"></i></button>
+        <button id="orders" class="tabRoundBtn"><i class="fa fa-shopping-cart"></i></button>
     </div>
 
-    <div id="popup1" class="overlay">
+    <div id="emProfile" class="overlay">
+        <div class="popup" style="color: black;">
+            <h2 id="emName">Tran Tuan Thinh</h2>
+            <a class="close" href="#">&times;</a>
+            <p><b>Số điện thoại:</b> <i id="emPhone"></i></p>
+            <p><b>Vị trí làm việc: </b><i id="emRole">Nhân viên bán hàng</i></p>
+            <button class="yellowBtn" id="logoutBtn">ĐĂNG XUẤT</button><BR />
+        </div>
+    </div>
+
+    <div id="login" class="overlay" name="login">
         <div class="popup">
             <h2>Login</h2>
             <a class="close" href="#">&times;</a>
-            <input placeholder="Nhập số điện thoại của bạn" id="phoneNo" type="number"><BR />
+            <input placeholder="Nhập số điện thoại của bạn" id="phoneNo" type="tel"><BR />
             <input placeholder="Nhập mật khẩu của bạn" id="password" type="password"><BR />
-            <button class="yellowBtn">ĐĂNG NHẬP</button><BR />
+            <button class="yellowBtn" id="loginBtn">ĐĂNG NHẬP</button><BR />
             <button class="textBtn" onclick="location.href='#create'">Tạo tài khoản</button>
         </div>
     </div>
 
-    <div id="popup2" class="overlay">
+    <div id="orderForm" class="overlay">
         <div class="popup">
             <h2>Đơn hàng</h2>
             <a class="close" href="#">&times;</a>
             <input placeholder="Tên khách hàng" id="cusName" name="customerName" type="text"><BR />
-            <input placeholder="Số điện thoại" id="phoneNo" type="number"><BR />
+            <input placeholder="Số điện thoại" id="phoneNo" type="tel"><BR />
 
-            <p id="orderedProducts"></p>
-            <ul>
-                <li>Tên mặt hàng</li>
-                <li>Số lượng</li>
-                <li>Giá</li>
-            </ul>
-            <ul>
-                <li>1. Capuchino</li>
-                <li>1</li>
-                <li>45000</li>
-            </ul>
+            <b>
+                <ul>
+                    <li>Tên mặt hàng</li>
+                    <li>Số lượng</li>
+                    <li>Giá</li>
+                </ul>
+            </b>
+
+            <p id="orderedProducts">
+
             </p>
 
             <h2 class="text">=============</h2>
 
-            <p class="text" style="padding: left;">Tổng cộng: <strong id="total">45000</strong><b>&#273</b></p>
-            <button class="yellowBtn">ĐẶT HÀNG</button>
+            <p class="text" style="padding: left;">Tổng cộng: <strong id="total">0</strong><b>&#273</b></p>
+            <button class="yellowBtn" id="orderBtn">ĐẶT HÀNG</button><br />
+            <button class="textBtn" style="color: orangered;" id="cancelBtn">Hủy</button>
         </div>
     </div>
 
@@ -70,7 +79,7 @@
             <a class="close" href="#">&times;</a>
             <input placeholder="Họ và tên" id="name" type="text"><BR />
             <input placeholder="Ngày sinh" id="DOB" type="date"><BR />
-            <input placeholder="Số điện thoại" id="phone" type="number"><BR />
+            <input placeholder="Số điện thoại" id="phone" type="tel"><BR />
             <input placeholder="Vị trí" id="role" type="number"><BR />
             <input placeholder="Mật khẩu cho nhân viên" id="newPass" type="password"><BR />
             <input placeholder="Nhập lại mật khẩu" id="reNewPass" type="password"><BR />
@@ -91,6 +100,8 @@
     <button class="gogoBtn" onclick="location.href='./orderPage.html'" type="button"><span>Đặt hàng <a>»</a></span>
     </button>
 </div>
+
+<script src="../index.js"></script>
 
 <footer>
     <div class="dropdownGrid">
