@@ -99,5 +99,5 @@ document.getElementById('logoutBtn').onclick = function () {
 document.getElementById('loginBtn').onclick = function () {
     let phoneNo = document.getElementById('phoneNo').value;
     location.href = '#emProfile';
-    document.getElementById('emPhone') = phoneNo;
+    document.getElementById('emPhone').innerHTML = phoneNo;
 }
